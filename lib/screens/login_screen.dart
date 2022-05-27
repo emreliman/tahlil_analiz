@@ -86,6 +86,7 @@ class LoginScreen extends StatelessWidget {
     if (nameController.text == 'ahmet' && passwordController.text == '12') {
       // Navigator.push(context,
       //     MaterialPageRoute(builder: (context) =>const MainScreen()));
+      FocusManager.instance.primaryFocus?.unfocus();
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (context) => const MainScreen()),
@@ -96,6 +97,5 @@ class LoginScreen extends StatelessWidget {
 
   void doit() async {
     List result = await AnalysisService.getAnalysis();
-    print(result);
   }
 }

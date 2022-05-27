@@ -1,6 +1,5 @@
 import 'dart:convert';
-
-import 'package:http/http.dart' as http;
+import 'package:flutter/services.dart';
 import '../models/Analysis.dart';
 
 class AnalysisService{
@@ -14,13 +13,17 @@ class AnalysisService{
   AnalysisService._internal();
 
   static Future getAnalysis () async{
-    final _response = await http.get(Uri.parse("http://10.0.2.2:3000/tahliller"));
-    if (_response.statusCode == 200){
-      return json.decode(_response.body);
-    }
-    else {
-      throw Exception("Yükleme başarısız.");
-    }
+    final String response =
+  await rootBundle.loadString('assets/54478355056.json');
+  final _data =json.decode(response);
+    return _data;
+    // final _response = await http.get(Uri.parse("http://10.0.2.2:3000/tahliller"));
+    // if (_response.statusCode == 200){
+    //   return json.decode(_response.body);
+    // }
+    // else {
+    //   throw Exception("Yükleme başarısız.");
+    // }
 
   }
 

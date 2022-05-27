@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:open_file/open_file.dart';
 import 'package:syncfusion_flutter_pdf/pdf.dart';
+import 'package:tahlil_analiz/screens/statusPage.dart';
 
 import '../models/Analysis.dart';
 import 'AnalysisPage.dart';
@@ -15,8 +16,6 @@ class MainScreen extends StatefulWidget {
 }
 
 class _mainScreenState extends State<MainScreen> {
-  List<Analysis> _items = [];
-  List<Analysis> _item_view = [];
   Analysis selected_analysis = Analysis("", "", "", "", "", "");
 
   @override
@@ -53,14 +52,42 @@ class _mainScreenState extends State<MainScreen> {
             ]),
             margin: EdgeInsets.all(10),
             child: ElevatedButton(
+              child: Text("Durumum",textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontSize: 25)),
+              style: ElevatedButton.styleFrom(
+                minimumSize: Size(200, 100),
+                maximumSize: Size(200, 100),
+                primary: Colors.lightGreen.withAlpha(155),
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => StatusPage()));
+              },
+            ),
+          ),
+        ),
+        SizedBox(height: 30.00),
+        Center(
+          child: Container(
+            decoration: BoxDecoration(boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.3),
+                spreadRadius: 2,
+                blurRadius: 4,
+                offset: Offset(0, 3), // changes position of shadow
+              ),
+            ]),
+            margin: EdgeInsets.all(10),
+            child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(200, 200),
                 maximumSize: Size(200, 200),
                 primary: Colors.lightBlue.withOpacity(0.5),
               ),
+              // change the page ------------------------
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => AnalysisPage()));
+                    MaterialPageRoute(builder: (context) => const AnalysisPage()));
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -87,11 +114,12 @@ class _mainScreenState extends State<MainScreen> {
             ),
           ]),
           child: ElevatedButton(
-            onPressed: () async {
+            onPressed: () {
               // final result = await FilePicker.platform.pickFiles();
               // if (result == null) return;
               //
               // final file = result.files.first;
+
               _extractText();
             },
             child: const Text('Pdf Yükle', style: TextStyle(fontSize: 25.00)),
@@ -107,7 +135,6 @@ class _mainScreenState extends State<MainScreen> {
   }
 
   void _extractText() async {
-    List<String> pdflines = [];
     List<String> forbidden_strings = [
       "Tarih",
       "Tahlil",
@@ -117,7 +144,7 @@ class _mainScreenState extends State<MainScreen> {
     ];
     // final result = await FilePicker.platform.pickFiles();
     PdfDocument document =
-    PdfDocument(inputBytes: await _readDocumentData('assets/tahlil.pdf'));
+        PdfDocument(inputBytes: await _readDocumentData('assets/tahlil.pdf'));
 
 //Create a new instance of the PdfTextExtractor.
     PdfTextExtractor extractor = PdfTextExtractor(document);
@@ -134,13 +161,12 @@ class _mainScreenState extends State<MainScreen> {
       }
     }
     print("before");
-    abc.forEach((element) {
-      if(element != "-"){
-        print(element.toString());
-      }
-
-    });
-
+    List<String> new_abc = [];
+    new_abc = abc.where((element) => element != "").toList();
+    print(new_abc[5]);
+    for (int a = 0; a < new_abc.length; a++) {
+      print("${new_abc[a]} ${a} ");
+    }
     text = abc.join("\n");
 
 //Display the text.
@@ -161,20 +187,19 @@ class _mainScreenState extends State<MainScreen> {
             content: Scrollbar(
               child: SingleChildScrollView(
                 child: Text(text),
-                physics:const  BouncingScrollPhysics(
+                physics: const BouncingScrollPhysics(
                     parent: AlwaysScrollableScrollPhysics()),
               ),
             ),
             actions: [
               ElevatedButton(
-                  child:const  Text('Close'),
+                  child: const Text('Close'),
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  style:ElevatedButton.styleFrom(
+                  style: ElevatedButton.styleFrom(
                     primary: Colors.transparent,
-                  )
-              )
+                  ))
             ],
           );
         });
@@ -183,6 +208,4 @@ class _mainScreenState extends State<MainScreen> {
   void openFile(PlatformFile file) {
     OpenFile.open(file.path!);
   }
-
-
 }

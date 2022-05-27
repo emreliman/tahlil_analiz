@@ -14,15 +14,11 @@ import 'package:syncfusion_flutter_pdf/pdf.dart';
 import 'package:tahlil_analiz/screens/login_screen.dart';
 import 'package:tahlil_analiz/screens/main_screen.dart';
 
-
 void main() {
-  GestureBinding.instance?.resamplingEnabled = true;
+  WidgetsFlutterBinding.ensureInitialized();
+  GestureBinding.instance.resamplingEnabled = true;
   runApp(MaterialApp(
     home: LoginScreen(),
     debugShowCheckedModeBanner: false,
   ));
 }
-
-
-
-

@@ -18,8 +18,66 @@ class AnalysisBloc {
 
     analysisStreamController.sink.add(analysis);
   }
+  void get_risky_Analysis() async {
+    final response = await AnalysisService.getAnalysis();
+    Iterable list = response;
+    List<Analysis> analysis =
+    list.map((value) => Analysis.fromJson(value)).toList();
+
+    List<Analysis> dangerous = await wait_dangerous(analysis);
+
+    analysisStreamController.sink.add(dangerous);
+  }
+
   void dispose(){
   analysisStreamController.close();
+  }
+
+  Future<List<Analysis>> wait_dangerous(List<Analysis> analysis) async {
+    List<Analysis> dangerous = [];
+    List<Analysis> danger_analysis = [];
+    for(int i=0; i<analysis.length;i++){
+      if (i == 0){
+        danger_analysis.add(analysis[i]);
+      }
+      else if (danger_analysis.any((element) => element.islem_adi == analysis[i].islem_adi)){
+        continue;
+      }
+      else{
+        danger_analysis.add(analysis[i]);
+      }
+    }
+
+
+    danger_analysis.forEach((item){
+      double upper;
+      double lower;
+
+      List<String> splitted = [];
+
+
+      try {
+        splitted = item.referans_degeri.split("-").length == 2
+            ? item.referans_degeri.split("-")
+            : ["0","0"];
+
+        upper = double.parse(splitted[1]);
+        lower = double.parse(splitted[0]);
+        double sonuc = double.parse(item.sonuc.toString());
+        if (sonuc > upper || sonuc < lower) {
+          
+          dangerous.add(item);
+        }
+
+      } catch (e) {
+        print(e);
+      }
+
+
+
+    });
+    return dangerous;
+
   }
 }
 

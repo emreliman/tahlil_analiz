@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import "package:charts_flutter/flutter.dart" as charts;
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 import '../models/Analysis.dart';
+
+enum Options { liste, grafik }
 
 class DetailPage extends StatefulWidget {
   List<Analysis> selected_list;
@@ -19,6 +20,7 @@ class DetailPage extends StatefulWidget {
 class _DetailPage extends State {
   List<Analysis> selected_list = [];
   List<Analysis> data = [];
+  var _popupMenuItemIndex = 0;
   Map<String, List<String>> _details = {
     "PLT": [
       "Vücutta kanın pıhtılaşmasını sağlayan hücre pulcuklara PLT,"
@@ -48,16 +50,49 @@ class _DetailPage extends State {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Detay"),
+          title: Text("${selected_list[0].islem_adi}"),
+          actions: [
+            PopupMenuButton(
+              onSelected: (val) {
+                _onMenuItemSelected(val as int);
+              },
+              itemBuilder: (ctx) => [
+                _buildPopupMenuItem(
+                    'Liste', Icons.library_books, Options.liste.index),
+                _buildPopupMenuItem(
+                    'Grafik', Icons.pie_chart, Options.grafik.index),
+              ],
+            )
+          ],
         ),
         body: Center(
           child: Column(
             children: <Widget>[
-              SizedBox(
-                height: 10.00,
+              Expanded(
+                child: Container(
+                  height: 60.00,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.vertical,
+                      child: Text(get_text(selected_list[0].islem_adi),
+                          style: TextStyle(
+                              fontSize: 16.00, fontWeight: FontWeight.bold)),
+                    ),
+                  ),
+                ),
               ),
-              Container(
-                child: Row(
+              const Divider(
+                height: 20,
+                thickness: 1,
+                endIndent: 0,
+                color: Colors.grey,
+              ),
+              if (_popupMenuItemIndex == 0) ...[
+                const SizedBox(
+                  height: 10.00,
+                ),
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Text(
@@ -77,63 +112,64 @@ class _DetailPage extends State {
                     ),
                   ],
                 ),
-              ),
-              Expanded(
-                child: Card(
-                  child: ListView.builder(
-                      itemCount: selected_list.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        return ListTile(
-                          title: Text(selected_list[index].islem_adi),
-                          subtitle: Text(selected_list[index].sonuc),
-                          trailing: Text(selected_list[index].tarih),
-                        );
-                      }),
-                ),
-              ),
-              Expanded(
-                child: Container(
-                  height:60.00,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.vertical,
-                      child: Text(get_text(selected_list[0].islem_adi), style: TextStyle(fontSize: 16.00, fontWeight: FontWeight.bold)),
-                    ),
+                Expanded(
+                  child: Card(
+                    child: ListView.builder(
+                        itemCount: selected_list.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          return ListTile(
+                            title: Text(selected_list[index].islem_adi),
+                            subtitle: find_subtitle(selected_list[index]),
+                            trailing: Text(selected_list[index].tarih),
+                          );
+                        }),
                   ),
                 ),
-              ),
-              Container(
-                child: SfCartesianChart(
-                  primaryXAxis: CategoryAxis(),
-                  primaryYAxis: NumericAxis(),
-                  series: <ChartSeries>[
-                    ColumnSeries<Analysis, String>(
-                        dataSource: selected_list,
-                        xValueMapper: (Analysis item, _) => item.tarih,
-                        yValueMapper: (Analysis item, _) {
-                          return double.tryParse(item.sonuc);
-                        },
-                        animationDuration: 3000,
-                        pointColorMapper: (Analysis item, _) {
-                          double upper;
-                          double lower;
-                          double sonuc = double.parse(item.sonuc);
-                          List<String> splitted;
-                          splitted = item.referans_degeri == null
-                              ? ['0', '0']
-                              : item.referans_degeri.split("-");
-                          upper = double.parse(splitted[1]);
-                          lower = double.parse(splitted[0]);
-                          if (sonuc > upper || sonuc < lower) {
-                            return Colors.red;
-                          } else {
+              ] else if (_popupMenuItemIndex == 1) ...[
+                Container(
+                  child: SfCartesianChart(
+                    primaryXAxis: CategoryAxis(),
+                    primaryYAxis: NumericAxis(),
+                    series: <ChartSeries>[
+                      ColumnSeries<Analysis, String>(
+                          dataSource: selected_list,
+                          xValueMapper: (Analysis item, _) => item.tarih,
+                          yValueMapper: (Analysis item, _) {
+                            try{
+                              return double.tryParse(item.sonuc);
+                            }
+                            catch (e){
+                              print(e);
+                              return 0;
+                            }
+                          },
+                          animationDuration: 3000,
+                          pointColorMapper: (Analysis item, _) {
+                          try {
+                            double upper;
+                            double lower;
+                            double sonuc = double.parse(item.sonuc);
+                            List<String> splitted;
+                            splitted = item.referans_degeri == null
+                                ? ['0', '0']
+                                : item.referans_degeri.split("-");
+                            upper = double.parse(splitted[1]);
+                            lower = double.parse(splitted[0]);
+                            if (sonuc > upper || sonuc < lower) {
+                              return Colors.red;
+                            } else {
+                              return Colors.green;
+                            }
+                          }
+                          catch(e){
+                            print(e);
                             return Colors.green;
                           }
-                        })
-                  ],
-                ),
-              ),
+                          })
+                    ],
+                  ),
+                )
+              ],
             ],
           ),
         ));
@@ -147,7 +183,7 @@ class _DetailPage extends State {
     try {
       splitted = item.referans_degeri.split("-").length == 2
           ? item.referans_degeri.split("-")
-          : [""];
+          : ["0","0"];
       if (splitted == [""]) {
         return Colors.lightGreen;
       } else {
@@ -166,11 +202,36 @@ class _DetailPage extends State {
   }
 
   String get_text(String islem_adi) {
-    if(_details.containsKey(islem_adi)){
-      return _details[islem_adi]![0]+_details[islem_adi]![1]+_details[islem_adi]![2];
-    }
-    else {
+    if (_details.containsKey(islem_adi)) {
+      return _details[islem_adi]![0] +
+          _details[islem_adi]![1] +
+          _details[islem_adi]![2];
+    } else {
       return "";
+    }
+  }
+
+  PopupMenuItem _buildPopupMenuItem(
+      String s, IconData pie_chart, int position) {
+    return PopupMenuItem(
+        value: position,
+        child: Row(
+          children: [Icon(pie_chart, color: Colors.black), Text(" " + s)],
+        ));
+  }
+
+  void _onMenuItemSelected(int val) {
+    setState(() {
+      _popupMenuItemIndex = val;
+    });
+  }
+
+  find_subtitle(Analysis selected_list) {
+    if(selected_list.sonuc == null){
+      return Text("Veri Yok");
+    }
+    else{
+      return Text(selected_list.sonuc);
     }
 
   }
