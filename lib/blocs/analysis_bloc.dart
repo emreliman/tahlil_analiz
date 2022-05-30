@@ -18,6 +18,16 @@ class AnalysisBloc {
 
     analysisStreamController.sink.add(analysis);
   }
+  void getAnalysisFromPdf() async {
+   List<Analysis> analysis = await AnalysisService.extractText("assets/tahlil2.pdf");
+   analysisStreamController.sink.add(analysis);
+  }
+  void getRiskyAnalysisFromPdf()async{
+    List<Analysis> analysis = await AnalysisService.extractText("assets/tahlil2.pdf");
+    List<Analysis> dangerous = await wait_dangerous(analysis);
+
+    analysisStreamController.sink.add(dangerous);
+  }
   void get_risky_Analysis() async {
     final response = await AnalysisService.getAnalysis();
     Iterable list = response;

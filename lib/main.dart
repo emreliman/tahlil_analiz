@@ -18,7 +18,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   GestureBinding.instance.resamplingEnabled = true;
   runApp(MaterialApp(
-    home: LoginScreen(),
+    home: MainScreen(),
     debugShowCheckedModeBanner: false,
   ));
 }

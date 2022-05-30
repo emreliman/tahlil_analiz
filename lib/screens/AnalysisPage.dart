@@ -3,20 +3,59 @@ import '../blocs/analysis_bloc.dart';
 import '../models/Analysis.dart';
 import 'detailPage.dart';
 
+enum Options { Hepsi, Riskli }
+
 class AnalysisPage extends StatefulWidget {
-  const AnalysisPage({Key? key}) : super(key: key);
+  bool from_web;
+   AnalysisPage(bool? from_web):
+  from_web=from_web ?? true;
 
   @override
-  State<AnalysisPage> createState() => _AnalysisPageState();
+  State<AnalysisPage> createState() => _AnalysisPageState(from_web);
 }
 
 class _AnalysisPageState extends State<AnalysisPage> {
   List<Analysis> selected_list = [];
+  bool from_web = true;
+
   final _mystream = AnalysisBloc();
+  var _popupMenuItemIndex = 0;
+  _AnalysisPageState(bool? from_web):
+  from_web =from_web ?? true;
 
   @override
   void initState() {
-    _mystream.getAnalysis();
+    if(from_web){
+      _mystream.getAnalysis();
+      WidgetsBinding.instance
+          .addPostFrameCallback((_) {
+        const snackBar = SnackBar(
+          backgroundColor: Colors.lightGreen,
+
+          content: Text("Veriler web'ten çekildi!"),
+        );
+
+// Find the ScaffoldMessenger in the widget tree
+// and use it to show a SnackBar.
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      });
+
+    }
+    else{
+      WidgetsBinding.instance
+          .addPostFrameCallback((_) {
+        const snackBar = SnackBar(
+          backgroundColor: Colors.orangeAccent,
+          content: Text("Veriler pdf'ten çekildi!"),
+        );
+
+// Find the ScaffoldMessenger in the widget tree
+// and use it to show a SnackBar.
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      });
+      _mystream.getAnalysisFromPdf();
+
+    }
     super.initState();
   }
 
@@ -32,6 +71,19 @@ class _AnalysisPageState extends State<AnalysisPage> {
       appBar: AppBar(
         title: Text("Analysis"),
         backgroundColor: Colors.transparent,
+        actions: [
+          PopupMenuButton(
+            onSelected: (val) {
+              _onMenuItemSelected(val as int);
+            },
+            itemBuilder: (ctx) => [
+              _buildPopupMenuItem(
+                  'Hepsi', Icons.all_inbox, Options.Hepsi.index),
+              _buildPopupMenuItem(
+                  'Riskli', Icons.heart_broken, Options.Riskli.index),
+            ],
+          )
+        ],
       ),
       body: Container(
         child: Column(
@@ -39,15 +91,29 @@ class _AnalysisPageState extends State<AnalysisPage> {
             SizedBox(
               height: 10.00,
             ),
-            Container(
-              child: const Text("Tüm Değerler",
-                  textAlign: TextAlign.center,
-                  style:  TextStyle(
-                    fontSize: 30.00,
-                    color: Color(0xCE4747FF),
-                    wordSpacing: 4.0,
-                  )),
-            ),
+            if(_popupMenuItemIndex ==0)...[
+              Container(
+                child: const Text("Tüm Değerler",
+                    textAlign: TextAlign.center,
+                    style:  TextStyle(
+                      fontSize: 30.00,
+                      color: Color(0xCE4747FF),
+                      wordSpacing: 4.0,
+                    )),
+              )
+            ]
+            else ...[
+              Container(
+                child: const Text("Riskli Değerler",
+                    textAlign: TextAlign.center,
+                    style:  TextStyle(
+                      fontSize: 30.00,
+                      color: Color(0xCE4747FF),
+                      wordSpacing: 4.0,
+                    )),
+              )
+            ]
+            ,
             const SizedBox(
               height: 10.00,
             ),
@@ -171,6 +237,41 @@ class _AnalysisPageState extends State<AnalysisPage> {
       return Colors.lightGreen;
     }
   }
+
+  void _onMenuItemSelected(int val) {
+    setState(() {
+      _popupMenuItemIndex = val;
+    });
+    if (_popupMenuItemIndex == 0){
+      if(from_web){
+        _mystream.getAnalysis();
+      }
+      else{
+        _mystream.getAnalysisFromPdf();
+      }
+
+    }
+    else{
+      if(from_web){
+        _mystream.get_risky_Analysis();
+      }
+      else{
+        _mystream.getRiskyAnalysisFromPdf();
+      }
+
+    }
+
+  }
+  PopupMenuItem _buildPopupMenuItem(
+      String s, IconData pie_chart, int position) {
+    return PopupMenuItem(
+        value: position,
+        child: Row(
+          children: [Icon(pie_chart, color: Colors.black), Text(" " + s)],
+        ));
+  }
+
+
 }
 
 // Future<void> readJson() async {

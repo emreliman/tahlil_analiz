@@ -32,6 +32,31 @@ class _StatusPageState extends State<StatusPage> {
       body: Container(
         child: Column(
           children:<Widget> [
+           const SizedBox(height: 30),
+
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(150),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.3),
+                    spreadRadius: 10,
+                    blurRadius: 5,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              child:const  FittedBox(
+                fit: BoxFit.fitHeight,
+                child: CircleAvatar(
+                  radius: 100,
+                  backgroundImage: AssetImage("assets/heart.png"),
+                ),
+              ),
+            )
+
+
+            ,
         StreamBuilder<List<Analysis>>(
           stream: _mystream.getStream,
           builder: (context, snapshot){

@@ -224,6 +224,7 @@ class _DetailPage extends State {
     setState(() {
       _popupMenuItemIndex = val;
     });
+
   }
 
   find_subtitle(Analysis selected_list) {

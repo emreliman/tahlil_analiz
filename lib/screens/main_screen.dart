@@ -35,40 +35,82 @@ class _mainScreenState extends State<MainScreen> {
   }
 
   Widget builMainBody(BuildContext context) {
-    return Column(
-      key: ObjectKey('FirstRow'),
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Center(
-          child: Container(
-            decoration: BoxDecoration(boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.3),
-                spreadRadius: 2,
-                blurRadius: 4,
-                offset: Offset(0, 3), // changes position of shadow
+    return SingleChildScrollView(
+      padding: EdgeInsets.all(10),
+      child: Column(
+        key: ObjectKey('FirstRow'),
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: Container(
+              decoration: BoxDecoration(boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.3),
+                  spreadRadius: 2,
+                  blurRadius: 4,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ]),
+              margin: EdgeInsets.all(10),
+              child: ElevatedButton(
+                child: Text("Durumum",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.white, fontSize: 25)),
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(200, 100),
+                  maximumSize: Size(200, 100),
+                  primary: Colors.lightGreen.withAlpha(155),
+                ),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => StatusPage()));
+                },
               ),
-            ]),
-            margin: EdgeInsets.all(10),
-            child: ElevatedButton(
-              child: Text("Durumum",textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.white, fontSize: 25)),
-              style: ElevatedButton.styleFrom(
-                minimumSize: Size(200, 100),
-                maximumSize: Size(200, 100),
-                primary: Colors.lightGreen.withAlpha(155),
-              ),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => StatusPage()));
-              },
             ),
           ),
-        ),
-        SizedBox(height: 30.00),
-        Center(
-          child: Container(
+          SizedBox(height: 30.00),
+          Center(
+            child: Container(
+              decoration: BoxDecoration(boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.3),
+                  spreadRadius: 2,
+                  blurRadius: 4,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ]),
+              margin: EdgeInsets.all(10),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(200, 200),
+                  maximumSize: Size(200, 200),
+                  primary: Colors.lightBlue.withOpacity(0.5),
+                ),
+                // change the page ------------------------
+                onPressed: () {
+
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  AnalysisPage(true)));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Tahliller",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.white, fontSize: 25),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 30.00),
+          Container(
             decoration: BoxDecoration(boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.3),
@@ -77,98 +119,119 @@ class _mainScreenState extends State<MainScreen> {
                 offset: Offset(0, 3), // changes position of shadow
               ),
             ]),
-            margin: EdgeInsets.all(10),
             child: ElevatedButton(
+              onPressed: () async {
+                // final result = await FilePicker.platform.pickFiles();
+                // if (result == null) return;
+                //
+                // final file = result.files.first;
+                // FilePickerResult? result = await FilePicker.platform.pickFiles(
+                //   type: FileType.custom,
+                //   allowedExtensions: ['pdf'],
+                // );
+      //           String file_path ="";
+      // if (result != null) {
+      // PlatformFile file = result.files.first;
+      // file_path = file.path!;
+      // }
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>AnalysisPage(false)));
+
+
+
+              },
+              child: const Text('Pdf Yükle', style: TextStyle(fontSize: 25.00)),
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(200, 200),
                 maximumSize: Size(200, 200),
-                primary: Colors.lightBlue.withOpacity(0.5),
-              ),
-              // change the page ------------------------
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const AnalysisPage()));
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30.0),
-                ),
-                alignment: Alignment.center,
-                child: Text(
-                  "Tahliller",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.white, fontSize: 25),
-                ),
+                primary: Colors.red,
               ),
             ),
           ),
-        ),
-        SizedBox(height: 30.00),
-        Container(
-          decoration: BoxDecoration(boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.3),
-              spreadRadius: 2,
-              blurRadius: 4,
-              offset: Offset(0, 3), // changes position of shadow
-            ),
-          ]),
-          child: ElevatedButton(
-            onPressed: () {
-              // final result = await FilePicker.platform.pickFiles();
-              // if (result == null) return;
-              //
-              // final file = result.files.first;
-
-              _extractText();
-            },
-            child: const Text('Pdf Yükle', style: TextStyle(fontSize: 25.00)),
-            style: ElevatedButton.styleFrom(
-              minimumSize: Size(200, 200),
-              maximumSize: Size(200, 200),
-              primary: Colors.red,
-            ),
-          ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 
-  void _extractText() async {
-    List<String> forbidden_strings = [
-      "Tarih",
-      "Tahlil",
-      "Sonuç",
-      "Sonuç Birimi",
-      "Referans Değeri"
-    ];
+  void _extractText(String file_path) async {
     // final result = await FilePicker.platform.pickFiles();
+    int page_size = 0;
     PdfDocument document =
-        PdfDocument(inputBytes: await _readDocumentData('assets/tahlil.pdf'));
-
-//Create a new instance of the PdfTextExtractor.
+        PdfDocument(inputBytes: await _readDocumentData(file_path));
+    page_size = document.pages.count;
     PdfTextExtractor extractor = PdfTextExtractor(document);
+    String text = "";
+    List<Analysis> analysis_list = [];
+    String tarih = "";
+    String ust_sinif = "";
+    for (int i = 0; i < page_size - 2; i++) {
+      // if(i ==0){
+
+      text = extractor.extractText(startPageIndex: i);
+      List<String> analysis = text.split("\n");
+      analysis.removeRange(0, 6);
+      analysis.removeAt(analysis.length - 1);
+      for (int j = 0; j < analysis.length - 1; j++) {
+        List<String> first2 = [analysis[j], analysis[j + 1], analysis[j + 2]];
+
+        if (first2[2].contains("-")) {
+          analysis_list
+              .add(Analysis(analysis[j + 1], "", "", "", analysis[j], ""));
+          tarih = analysis[j];
+          ust_sinif = analysis[j + 1];
+          if (analysis[j + 1].contains("İdrar analizi (Strip ile)")) {
+            break;
+          }
+          j = j + 1;
+          print("ahmet");
+          continue;
+        }
+        if (first2[0].contains("-")) {
+          analysis_list.add(Analysis(analysis[j + 1], analysis[j + 2],
+              analysis[j + 3], analysis[j + 4], tarih, ust_sinif));
+          print("j");
+          j = j + 4;
+          continue;
+        } else {
+          analysis_list.add(Analysis(analysis[j + 1], analysis[j + 2],
+              analysis[j + 3], analysis[j + 4], analysis[j], ""));
+          print("kardas");
+          j = j + 4;
+
+          continue;
+        }
+      }
+
+      // }
+
+    }
+//Create a new instance of the PdfTextExtractor.
 
 //Extract all the text from the document.
-    String text = extractor.extractText();
-    List<String> abc = text.split("\n");
-    abc.removeRange(0, 7);
-    for (int i = 0; i < abc.length; i++) {
-      if (abc[i].toString() == "") {
-        abc.removeAt(i);
-      } else if (forbidden_strings.any((element) => element == abc[i])) {
-        abc.removeAt(i);
-      }
-    }
-    print("before");
-    List<String> new_abc = [];
-    new_abc = abc.where((element) => element != "").toList();
-    print(new_abc[5]);
-    for (int a = 0; a < new_abc.length; a++) {
-      print("${new_abc[a]} ${a} ");
-    }
-    text = abc.join("\n");
 
+    // for (int i = 0; i < abc.length; i++) {
+    //   if (abc[i].toString() == "") {
+    //     abc.removeAt(i);
+    //   } else if (forbidden_strings.contains(abc[i])) {
+    //     abc.removeAt(i);
+    //   }
+    // }
+    print("before");
+    // List<String> new_abc = [];
+
+    // new_abc = abc.where((element) => element != "").toList();
+    // new_abc = new_abc[5].split("-");
+    // asdas = double.parse(new_abc[0]) +1;
+    // print("${new_abc[0]}  ${asdas}");
+    // for (int a = 0; a < new_abc.length; a++) {
+    //   print("${new_abc[a]} ${a} ");
+    // }
+
+    // text = extractor.extractText(startPageIndex: 0);
+    // List<String> analysis = text.split("\n");
+    //     analysis.removeRange(0, 7);
+    //     analysis.removeAt(analysis.length-1);
+    // text = analysis.join("\n");
 //Display the text.
     _showResult(text);
   }
