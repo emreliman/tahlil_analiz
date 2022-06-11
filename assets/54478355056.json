@@ -1,1570 +1,484 @@
-[
-    {
-        "Islem_Adi": "Tam Kan Sayımı (Hemogram)",
-        "Sonuc": null,
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "WBC",
-        "Sonuc": "6.3",
-        "Sonuc_Birimi": "10^9/L",
-        "Referans_Degeri": "4.1-10.3",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "RDW",
-        "Sonuc": "12.8",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "11.6-16.6",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "RBC",
-        "Sonuc": "5.01",
-        "Sonuc_Birimi": "10^12/L",
-        "Referans_Degeri": "4.38-6.08",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "PLT",
-        "Sonuc": "246",
-        "Sonuc_Birimi": "10^9/L",
-        "Referans_Degeri": "150-450",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "PDW",
-        "Sonuc": "16.5",
-        "Sonuc_Birimi": "fL",
-        "Referans_Degeri": "9-18.2",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "PCT",
-        "Sonuc": "0.199",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "0.1-0.32",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "NE%",
-        "Sonuc": "38.6",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "37.00-73.00",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "NE#",
-        "Sonuc": "2.4",
-        "Sonuc_Birimi": "10^9/L",
-        "Referans_Degeri": "1.40-6.20",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MPV",
-        "Sonuc": "8.1",
-        "Sonuc_Birimi": "fL",
-        "Referans_Degeri": "6.9-11.4",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MONO%",
-        "Sonuc": "10.0",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "2.5-12.2",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MONO#",
-        "Sonuc": "0.6",
-        "Sonuc_Birimi": "10^9/L",
-        "Referans_Degeri": "0-0.90",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MCV",
-        "Sonuc": "83.2",
-        "Sonuc_Birimi": "fL",
-        "Referans_Degeri": "79-99",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MCHC",
-        "Sonuc": "357",
-        "Sonuc_Birimi": "g/L",
-        "Referans_Degeri": "320-370",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MCH",
-        "Sonuc": "29.7",
-        "Sonuc_Birimi": "pg",
-        "Referans_Degeri": "27-35",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "LYM%",
-        "Sonuc": "48.7",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "20-53.1",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "LYM#",
-        "Sonuc": "3.1",
-        "Sonuc_Birimi": "10^9/L",
-        "Referans_Degeri": "1.2-3.5",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "HGB",
-        "Sonuc": "149",
-        "Sonuc_Birimi": "g/L",
-        "Referans_Degeri": "129-175",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "HCT",
-        "Sonuc": "41.7",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "38.6-51",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "EOS%",
-        "Sonuc": "2.3",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "0-11",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "EOS#",
-        "Sonuc": "0.1",
-        "Sonuc_Birimi": "10^9/L",
-        "Referans_Degeri": "0-0.70",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "BASO%",
-        "Sonuc": "0.4",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "0.00-2",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "BASO#",
-        "Sonuc": "0.0",
-        "Sonuc_Birimi": "10^9/L",
-        "Referans_Degeri": "0.00-0.20",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Demir (serum)",
-        "Sonuc": "87.300",
-        "Sonuc_Birimi": "µg/dL",
-        "Referans_Degeri": "60.00-180.00",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Demir bağlama kapasitesi (TDBK)",
-        "Sonuc": "262",
-        "Sonuc_Birimi": "µg/dL",
-        "Referans_Degeri": "155-355",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Ferritin",
-        "Sonuc": "92.1",
-        "Sonuc_Birimi": "ng/mL",
-        "Referans_Degeri": "23.90-336.20",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Vitamin B12",
-        "Sonuc": "131",
-        "Sonuc_Birimi": "pg/mL",
-        "Referans_Degeri": "126.50-505.00",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "LDL kolesterol",
-        "Sonuc": "178",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "0-130",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Kolesterol",
-        "Sonuc": "249",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "0.00-200.00",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "HDL kolesterol",
-        "Sonuc": "41",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "33-90",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Trigliserid",
-        "Sonuc": "406",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "0.00-150.00",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Alanin aminotransferaz (ALT)",
-        "Sonuc": "27",
-        "Sonuc_Birimi": "U/L",
-        "Referans_Degeri": "0.00-50.00",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Aspartat transaminaz (AST)",
-        "Sonuc": "22",
-        "Sonuc_Birimi": "U/L",
-        "Referans_Degeri": "0.00-50.00",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Glukoz (Açlık Kan Şekeri)",
-        "Sonuc": "82",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "74.00-110.00",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Glike hemoglobin (Hb A1c)",
-        "Sonuc": null,
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "HbA1c (IFCC)",
-        "Sonuc": "32",
-        "Sonuc_Birimi": "mmol/mol H",
-        "Referans_Degeri": "20-44",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Glike hemoglobin (Hb A1c)"
-    },
-    {
-        "Islem_Adi": "HbA1c",
-        "Sonuc": "5.1",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "4.00-6.20",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "Glike hemoglobin (Hb A1c)"
-    },
-    {
-        "Islem_Adi": "Serbest T3",
-        "Sonuc": "3.56",
-        "Sonuc_Birimi": "pg/mL",
-        "Referans_Degeri": "2.20-4.37",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Serbest T4",
-        "Sonuc": "0.68",
-        "Sonuc_Birimi": "ng/dL",
-        "Referans_Degeri": "0.61-1.12",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "TSH",
-        "Sonuc": "2.442",
-        "Sonuc_Birimi": "uIU/mL",
-        "Referans_Degeri": "0.38-5.33",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Üre (Serum/Plazma)",
-        "Sonuc": "34.76",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "12.00-43.00",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Kreatinin",
-        "Sonuc": "0.76",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "0.67-1.17",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "HBsAg",
-        "Sonuc": "0.22 Negatif",
-        "Sonuc_Birimi": "S/CO",
-        "Referans_Degeri": ">=1",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Anti HCV",
-        "Sonuc": "0.06 Negatif",
-        "Sonuc_Birimi": "S/CO",
-        "Referans_Degeri": ">=1",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Anti HIV",
-        "Sonuc": "0.11 Negatif",
-        "Sonuc_Birimi": "S/CO",
-        "Referans_Degeri": ">=1",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Anti HBs",
-        "Sonuc": "975.45 Pozitif",
-        "Sonuc_Birimi": "IU/L",
-        "Referans_Degeri": ">=10",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "İdrar analizi (Strip ile)",
-        "Sonuc": null,
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Ürobilinojen",
-        "Sonuc": "Normal",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "Normal",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Renk",
-        "Sonuc": "Sarı",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Protein",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "Negatif",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "pH",
-        "Sonuc": "5",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "5-7",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Nitrit",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "Negatif",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Lökosit Esteraz",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "Negatif",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Keton",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "Negatif",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Hemoglobin",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "Negatif",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Glukoz",
-        "Sonuc": "Normal",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "Normal",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Dansite",
-        "Sonuc": "1.033",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "1.015-1.025",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Bulanıklık",
-        "Sonuc": "Berrak",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Bilirubin",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "Negatif",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "Askorbik Asit",
-        "Sonuc": "+",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "Negatif",
-        "Tarih": "23.06.2021",
-        "Ust_Sinif": "İdrar analizi (Strip ile)"
-    },
-    {
-        "Islem_Adi": "İkter",
-        "Sonuc": "1",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "09.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "EGFR",
-        "Sonuc": "122.52",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "09.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Hemoliz",
-        "Sonuc": "15",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "09.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Lipemik",
-        "Sonuc": "27",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "09.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Hemogram (Tam Kan)",
-        "Sonuc": null,
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Eos#",
-        "Sonuc": "0.12",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.0 - 0.6",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "Bas%",
-        "Sonuc": "0.2",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "0.2 - 1.3",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "Bas#",
-        "Sonuc": "0.02",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.0 - 0.2",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "WBC",
-        "Sonuc": "10.19",
-        "Sonuc_Birimi": "10^3/MM^3",
-        "Referans_Degeri": "3.7 - 10.6",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "RBC",
-        "Sonuc": "5.26",
-        "Sonuc_Birimi": "10^6/MM^3",
-        "Referans_Degeri": "3.61 - 5.58",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "PLT",
-        "Sonuc": "231",
-        "Sonuc_Birimi": "10^3/mm3",
-        "Referans_Degeri": "139 - 371",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "PDW",
-        "Sonuc": "16.1",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "11.5 - 21",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "PCT",
-        "Sonuc": "0.226",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "0.2 - 0.4",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "MPV",
-        "Sonuc": "9.8",
-        "Sonuc_Birimi": "um3",
-        "Referans_Degeri": "7.5 - 11.1",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "MCV",
-        "Sonuc": "86.2",
-        "Sonuc_Birimi": "um3",
-        "Referans_Degeri": "78 - 99.6",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "MCH",
-        "Sonuc": "29.5",
-        "Sonuc_Birimi": "pg",
-        "Referans_Degeri": "25.4 - 33.8",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "HGB",
-        "Sonuc": "15.5",
-        "Sonuc_Birimi": "g/dl",
-        "Referans_Degeri": "10.8 - 16.8",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "HCT",
-        "Sonuc": "45.4",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "32.7 - 49.7",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "RDW-SD",
-        "Sonuc": "39.1",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "RDW-CV",
-        "Sonuc": "12.9",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "11.3 - 17.1",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "Lymph%",
-        "Sonuc": "39.7",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "16.1 - 48.7",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "Lymph#",
-        "Sonuc": "4.05",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.9 - 3.7",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "Neu%",
-        "Sonuc": "52.9",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "39.9 - 75.4",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "Neu#",
-        "Sonuc": "5.39",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "1.8 - 7.8",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "Mon%",
-        "Sonuc": "6.0",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "3.8 - 12",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "Mon#",
-        "Sonuc": "0.61",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.3 - 1.1",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "MCHC",
-        "Sonuc": "34.2",
-        "Sonuc_Birimi": "g/dl",
-        "Referans_Degeri": "31.9 - 35.1",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "Eos%",
-        "Sonuc": "1.2",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "0.8 - 7.6",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "Hemogram (Tam Kan)"
-    },
-    {
-        "Islem_Adi": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)",
-        "Sonuc": null,
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "NEC",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "SEC",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "URIC",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "Triple fosfat",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "Granuler Slndr",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "TURB",
-        "Sonuc": "Berrak",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "BACT",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "WBC",
-        "Sonuc": "0",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "UBG",
-        "Sonuc": "Normal",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "PRO",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "NIT",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "LEU",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "KET",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "GLU",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "ERY",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "pH",
-        "Sonuc": "5",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "5.5 - 8.5",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "SG",
-        "Sonuc": "1.019",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "1.005 - 1.025",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "COLOR",
-        "Sonuc": "Sarı",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "Caox",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "BIL",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "RBC",
-        "Sonuc": "0",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "Amorf Kristali",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "HYA",
-        "Sonuc": "1",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "BYST",
-        "Sonuc": "Negatif",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": "İdrar tetkiki (Tam otomatik idrar biyokimyası ve mikroskopisi)"
-    },
-    {
-        "Islem_Adi": "Sedimentasyon",
-        "Sonuc": "5",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Demir bağlama kapasitesi",
-        "Sonuc": "257.4",
-        "Sonuc_Birimi": "ug/dL",
-        "Referans_Degeri": "125 - 345",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Folat",
-        "Sonuc": "3.67",
-        "Sonuc_Birimi": "ng/dL",
-        "Referans_Degeri": "5 - 35",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Vitamin B12",
-        "Sonuc": "184.0",
-        "Sonuc_Birimi": "ng/dL",
-        "Referans_Degeri": "191 - 663",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Potasyum",
-        "Sonuc": "4.22",
-        "Sonuc_Birimi": "mmol/L",
-        "Referans_Degeri": "3.5 - 5.1",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Alanin aminotransferaz (ALT)",
-        "Sonuc": "18.8",
-        "Sonuc_Birimi": "U/L",
-        "Referans_Degeri": "0 - 41",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "TSH",
-        "Sonuc": "3.35",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.27 - 4.2",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Kreatinin",
-        "Sonuc": "0.90",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "0.5 - 1.2",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Glukoz",
-        "Sonuc": "80.6",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "70 - 109",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Urik asit",
-        "Sonuc": "6.8",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "3.4 - 7",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Üre",
-        "Sonuc": "24.2",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "16.6 - 48.5",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Aspartat transaminaz (AST)",
-        "Sonuc": "18.3",
-        "Sonuc_Birimi": "U/L",
-        "Referans_Degeri": "0 - 40",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "CRP,turbidimetrik",
-        "Sonuc": "0.10",
-        "Sonuc_Birimi": "mg/dL",
-        "Referans_Degeri": "0.0 - 0.5",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Demir (Serum)",
-        "Sonuc": "121.2",
-        "Sonuc_Birimi": "ug/dL",
-        "Referans_Degeri": "30 - 193",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Sodyum (Na)",
-        "Sonuc": "138",
-        "Sonuc_Birimi": "mmol/L",
-        "Referans_Degeri": "136 - 145",
-        "Tarih": "08.10.2019",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Tam Kan (Hemogram)",
-        "Sonuc": null,
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "WBC",
-        "Sonuc": "7.60",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "3.7 - 10.6",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Bas#",
-        "Sonuc": "0.01",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0 - 0.2",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Bas%",
-        "Sonuc": "0.2",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.2 - 1.3",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Neu#",
-        "Sonuc": "3.65",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "1.8 - 7.8",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Neu%",
-        "Sonuc": "47.9",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "39.9 - 75.4",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Eos#",
-        "Sonuc": "0.10",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0 - 0.6",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Eos%",
-        "Sonuc": "1.4",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.8 - 7.6",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Lymph#",
-        "Sonuc": "3.33",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.9 - 3.7",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Lymph%",
-        "Sonuc": "43.8",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "16.1 - 48.7",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Mon#",
-        "Sonuc": "0.51",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.3 - 1.1",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Mon%",
-        "Sonuc": "6.7",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "3.8 - 12",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "RBC",
-        "Sonuc": "5.36",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "3.61 - 5.58",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "HGB",
-        "Sonuc": "15.7",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "10.8 - 16.8",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MCV",
-        "Sonuc": "86.3",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "78 - 99.6",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MCH",
-        "Sonuc": "29.3",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "25.4 - 33.8",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MCHC",
-        "Sonuc": "34.0",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "31.9 - 35.1",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "RDW-CV",
-        "Sonuc": "13.1",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "11.3 - 17.1",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "HCT",
-        "Sonuc": "46.2",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "32.7 - 49.7",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "PLT",
-        "Sonuc": "285",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "139 - 371",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MPV",
-        "Sonuc": "9.0",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "7.5 - 11.1",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "PDW",
-        "Sonuc": "17.5",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "11.5 - 21",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "PCT",
-        "Sonuc": "0.258",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.2 - 0.4",
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "NRBC",
-        "Sonuc": "0.000",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "P-LCR",
-        "Sonuc": "24.4",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "P-LCC",
-        "Sonuc": "70",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "RDW-SD",
-        "Sonuc": "40.5",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "09.10.2018",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "Glukoz",
-        "Sonuc": "105.7",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "70 - 109",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Kan üre azotu (BUN)",
-        "Sonuc": "26",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "16.6 - 48.5",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Kreatinin",
-        "Sonuc": "0.94",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.7 - 1.2",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "GFR hesaplaması",
-        "Sonuc": "117",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "SERBEST T4",
-        "Sonuc": "1.11",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.93 - 1.7",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "TSH",
-        "Sonuc": "2.42",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0.27 - 4.2",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "FERRITIN",
-        "Sonuc": "86.31",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "30 - 400",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "B12 VITAMIN",
-        "Sonuc": "288.1",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "191 - 663",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "FOLAT",
-        "Sonuc": "5.9",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "5 - 35",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Sodyum (Na) (serum ve vücut sıvılarında, herbiri)",
-        "Sonuc": "142",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "136 - 145",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "POTASYUM",
-        "Sonuc": "4.09",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "3.5 - 5.1",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "KALSIYUM (CA)",
-        "Sonuc": "9.95",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "8.2 - 10.8",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "MAGNEZYUM",
-        "Sonuc": "2.19",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "1.6 - 2.6",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Aspartat transaminaz (AST)",
-        "Sonuc": "16.3",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0 - 40",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "ALT",
-        "Sonuc": "20",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": "0 - 41",
-        "Tarih": "08.10.2018",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Anti HCV (Mikropartikül immün assay-MEIA veya benzeri)",
-        "Sonuc": "0.06",
-        "Sonuc_Birimi": "mIU/mL",
-        "Referans_Degeri": "0.0 - 1.0",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Anti HBs (Mikropartikül immün assay-MEIA veya benzeri)",
-        "Sonuc": "978.58",
-        "Sonuc_Birimi": "mIU/mL",
-        "Referans_Degeri": "0 - 10",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Anti HIV CORE (Kemiluminesans veya benzeri)",
-        "Sonuc": "0.12",
-        "Sonuc_Birimi": "S/CO",
-        "Referans_Degeri": "0 - 1",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "HBsAg (Kemoluminesans veya benzeri)",
-        "Sonuc": "0.18",
-        "Sonuc_Birimi": "mIU/mL",
-        "Referans_Degeri": "0.0 - 1.0",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "Tam Kan (Hemogram)",
-        "Sonuc": null,
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": null
-    },
-    {
-        "Islem_Adi": "RDWA",
-        "Sonuc": "67.2",
-        "Sonuc_Birimi": "fl",
-        "Referans_Degeri": "30.0 - 150.0",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "RDWR",
-        "Sonuc": "14.6",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "11 - 16",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "GRAN",
-        "Sonuc": "3.8",
-        "Sonuc_Birimi": "*10^3/L",
-        "Referans_Degeri": "1.2 - 8",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "WBC",
-        "Sonuc": "7.5",
-        "Sonuc_Birimi": "*10^3/L",
-        "Referans_Degeri": "3.5 - 10",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "LYM",
-        "Sonuc": "3.2",
-        "Sonuc_Birimi": "*10^3/L",
-        "Referans_Degeri": "0.5 - 5",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "LYM%",
-        "Sonuc": "43.9",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "15 - 50",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "RBC",
-        "Sonuc": "5.67",
-        "Sonuc_Birimi": "*10^6/L",
-        "Referans_Degeri": "3.5 - 5.5",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "HGB",
-        "Sonuc": "15.8",
-        "Sonuc_Birimi": "g/dl",
-        "Referans_Degeri": "11.5 - 16.5",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "HCT",
-        "Sonuc": "47.4",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "35 - 55",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MCHC",
-        "Sonuc": "33.5",
-        "Sonuc_Birimi": "g/dl",
-        "Referans_Degeri": "31 - 38",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "PLT",
-        "Sonuc": "230",
-        "Sonuc_Birimi": "*10^3/L",
-        "Referans_Degeri": "100 - 400",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MPV",
-        "Sonuc": "9.8",
-        "Sonuc_Birimi": "fl",
-        "Referans_Degeri": "8 - 11",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "PCT",
-        "Sonuc": "0.22",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "0.01 - 9.99",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "PDW",
-        "Sonuc": "11.7",
-        "Sonuc_Birimi": "fl",
-        "Referans_Degeri": "0.1 - 99.9",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "LPCR",
-        "Sonuc": "24.5",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "0.1 - 99.9",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MONO",
-        "Sonuc": "0.5",
-        "Sonuc_Birimi": "*10^3/L",
-        "Referans_Degeri": "0.1 - 1.5",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MONO%",
-        "Sonuc": "5.5",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "2 - 15",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MCV",
-        "Sonuc": "83.5",
-        "Sonuc_Birimi": "fl",
-        "Referans_Degeri": "75 - 100",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "MCH",
-        "Sonuc": "28.0",
-        "Sonuc_Birimi": "pg",
-        "Referans_Degeri": "25 - 35",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "GRAN%",
-        "Sonuc": "50.6",
-        "Sonuc_Birimi": "%",
-        "Referans_Degeri": "35 - 80",
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": "Tam Kan (Hemogram)"
-    },
-    {
-        "Islem_Adi": "ABO+Rh tayini (Forward gruplama)+ABO reverse gruplama",
-        "Sonuc": "0 RH POZİTİF",
-        "Sonuc_Birimi": null,
-        "Referans_Degeri": null,
-        "Tarih": "19.06.2017",
-        "Ust_Sinif": null
+{
+  "tahliller": [
+    {
+      "Islem_Adi": "Tam Kan Sayımı (Hemogram)",
+      "Sonuc": null,
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": null,
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "WBC",
+      "Sonuc": "6.3",
+      "Sonuc_Birimi": "10^9/L",
+      "Referans_Degeri": "4.1-10.3",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "RDW",
+      "Sonuc": "12.8",
+      "Sonuc_Birimi": "%",
+      "Referans_Degeri": "11.6-16.6",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "RBC",
+      "Sonuc": "5.01",
+      "Sonuc_Birimi": "10^12/L",
+      "Referans_Degeri": "4.38-6.08",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "PLT",
+      "Sonuc": "246",
+      "Sonuc_Birimi": "10^9/L",
+      "Referans_Degeri": "150-450",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "PDW",
+      "Sonuc": "16.5",
+      "Sonuc_Birimi": "fL",
+      "Referans_Degeri": "9-18.2",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "PCT",
+      "Sonuc": "0.199",
+      "Sonuc_Birimi": "%",
+      "Referans_Degeri": "0.1-0.32",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "NE%",
+      "Sonuc": "38.6",
+      "Sonuc_Birimi": "%",
+      "Referans_Degeri": "37.00-73.00",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "NE#",
+      "Sonuc": "2.4",
+      "Sonuc_Birimi": "10^9/L",
+      "Referans_Degeri": "1.40-6.20",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "MPV",
+      "Sonuc": "8.1",
+      "Sonuc_Birimi": "fL",
+      "Referans_Degeri": "6.9-11.4",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "MONO%",
+      "Sonuc": "10.0",
+      "Sonuc_Birimi": "%",
+      "Referans_Degeri": "2.5-12.2",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "MONO#",
+      "Sonuc": "0.6",
+      "Sonuc_Birimi": "10^9/L",
+      "Referans_Degeri": "0-0.90",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "MCV",
+      "Sonuc": "83.2",
+      "Sonuc_Birimi": "fL",
+      "Referans_Degeri": "79-99",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "MCHC",
+      "Sonuc": "357",
+      "Sonuc_Birimi": "g/L",
+      "Referans_Degeri": "320-370",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "MCH",
+      "Sonuc": "29.7",
+      "Sonuc_Birimi": "pg",
+      "Referans_Degeri": "27-35",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "LYM%",
+      "Sonuc": "48.7",
+      "Sonuc_Birimi": "%",
+      "Referans_Degeri": "20-53.1",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "LYM#",
+      "Sonuc": "3.1",
+      "Sonuc_Birimi": "10^9/L",
+      "Referans_Degeri": "1.2-3.5",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "HGB",
+      "Sonuc": "149",
+      "Sonuc_Birimi": "g/L",
+      "Referans_Degeri": "129-175",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "HCT",
+      "Sonuc": "41.7",
+      "Sonuc_Birimi": "%",
+      "Referans_Degeri": "38.6-51",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "EOS%",
+      "Sonuc": "2.3",
+      "Sonuc_Birimi": "%",
+      "Referans_Degeri": "0-11",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "EOS#",
+      "Sonuc": "0.1",
+      "Sonuc_Birimi": "10^9/L",
+      "Referans_Degeri": "0-0.70",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "BASO%",
+      "Sonuc": "0.4",
+      "Sonuc_Birimi": "%",
+      "Referans_Degeri": "0.00-2",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "BASO#",
+      "Sonuc": "0.0",
+      "Sonuc_Birimi": "10^9/L",
+      "Referans_Degeri": "0.00-0.20",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Tam Kan Sayımı (Hemogram)"
+    },
+    {
+      "Islem_Adi": "Demir (serum)",
+      "Sonuc": "87.300",
+      "Sonuc_Birimi": "µg/dL",
+      "Referans_Degeri": "60.00-180.00",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Demir bağlama kapasitesi (TDBK)",
+      "Sonuc": "262",
+      "Sonuc_Birimi": "µg/dL",
+      "Referans_Degeri": "155-355",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Ferritin",
+      "Sonuc": "92.1",
+      "Sonuc_Birimi": "ng/mL",
+      "Referans_Degeri": "23.90-336.20",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Vitamin B12",
+      "Sonuc": "131",
+      "Sonuc_Birimi": "pg/mL",
+      "Referans_Degeri": "126.50-505.00",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "LDL kolesterol",
+      "Sonuc": "178",
+      "Sonuc_Birimi": "mg/dL",
+      "Referans_Degeri": "0-130",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Kolesterol",
+      "Sonuc": "249",
+      "Sonuc_Birimi": "mg/dL",
+      "Referans_Degeri": "0.00-200.00",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "HDL kolesterol",
+      "Sonuc": "41",
+      "Sonuc_Birimi": "mg/dL",
+      "Referans_Degeri": "33-90",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Trigliserid",
+      "Sonuc": "406",
+      "Sonuc_Birimi": "mg/dL",
+      "Referans_Degeri": "0.00-150.00",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Alanin aminotransferaz (ALT)",
+      "Sonuc": "27",
+      "Sonuc_Birimi": "U/L",
+      "Referans_Degeri": "0.00-50.00",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Aspartat transaminaz (AST)",
+      "Sonuc": "22",
+      "Sonuc_Birimi": "U/L",
+      "Referans_Degeri": "0.00-50.00",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Glukoz (Açlık Kan Şekeri)",
+      "Sonuc": "82",
+      "Sonuc_Birimi": "mg/dL",
+      "Referans_Degeri": "74.00-110.00",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Glike hemoglobin (Hb A1c)",
+      "Sonuc": null,
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": null,
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "HbA1c (IFCC)",
+      "Sonuc": "32",
+      "Sonuc_Birimi": "mmol/mol H",
+      "Referans_Degeri": "20-44",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Glike hemoglobin (Hb A1c)"
+    },
+    {
+      "Islem_Adi": "HbA1c",
+      "Sonuc": "5.1",
+      "Sonuc_Birimi": "%",
+      "Referans_Degeri": "4.00-6.20",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "Glike hemoglobin (Hb A1c)"
+    },
+    {
+      "Islem_Adi": "Serbest T3",
+      "Sonuc": "3.56",
+      "Sonuc_Birimi": "pg/mL",
+      "Referans_Degeri": "2.20-4.37",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Serbest T4",
+      "Sonuc": "0.68",
+      "Sonuc_Birimi": "ng/dL",
+      "Referans_Degeri": "0.61-1.12",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "TSH",
+      "Sonuc": "2.442",
+      "Sonuc_Birimi": "uIU/mL",
+      "Referans_Degeri": "0.38-5.33",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Üre (Serum/Plazma)",
+      "Sonuc": "34.76",
+      "Sonuc_Birimi": "mg/dL",
+      "Referans_Degeri": "12.00-43.00",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Kreatinin",
+      "Sonuc": "0.76",
+      "Sonuc_Birimi": "mg/dL",
+      "Referans_Degeri": "0.67-1.17",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "HBsAg",
+      "Sonuc": "0.22 Negatif",
+      "Sonuc_Birimi": "S/CO",
+      "Referans_Degeri": ">=1",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Anti HCV",
+      "Sonuc": "0.06 Negatif",
+      "Sonuc_Birimi": "S/CO",
+      "Referans_Degeri": ">=1",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Anti HIV",
+      "Sonuc": "0.11 Negatif",
+      "Sonuc_Birimi": "S/CO",
+      "Referans_Degeri": ">=1",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Anti HBs",
+      "Sonuc": "975.45 Pozitif",
+      "Sonuc_Birimi": "IU/L",
+      "Referans_Degeri": ">=10",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "İdrar analizi (Strip ile)",
+      "Sonuc": null,
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": null,
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": null
+    },
+    {
+      "Islem_Adi": "Ürobilinojen",
+      "Sonuc": "Normal",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "Normal",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Renk",
+      "Sonuc": "Sarı",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": null,
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Protein",
+      "Sonuc": "Negatif",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "Negatif",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "pH",
+      "Sonuc": "5",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "5-7",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Nitrit",
+      "Sonuc": "Negatif",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "Negatif",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Lökosit Esteraz",
+      "Sonuc": "Negatif",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "Negatif",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Keton",
+      "Sonuc": "Negatif",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "Negatif",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Hemoglobin",
+      "Sonuc": "Negatif",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "Negatif",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Glukoz",
+      "Sonuc": "Normal",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "Normal",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Dansite",
+      "Sonuc": "1.033",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "1.015-1.025",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Bulanıklık",
+      "Sonuc": "Berrak",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": null,
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Bilirubin",
+      "Sonuc": "Negatif",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "Negatif",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
+    },
+    {
+      "Islem_Adi": "Askorbik Asit",
+      "Sonuc": "+",
+      "Sonuc_Birimi": null,
+      "Referans_Degeri": "Negatif",
+      "Tarih": "23.06.2021",
+      "Ust_Sinif": "İdrar analizi (Strip ile)"
     }
-]
+  ]
+}

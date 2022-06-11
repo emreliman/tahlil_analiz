@@ -1,5 +1,10 @@
 import 'dart:convert';
+import 'dart:async';
+import 'dart:io';
+import 'dart:typed_data';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/services.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:syncfusion_flutter_pdf/pdf.dart';
 import '../models/Analysis.dart';
 
@@ -30,16 +35,47 @@ class AnalysisService{
 
   static Future<List<Analysis>> extractText(String file_path) async {
     // final result = await FilePicker.platform.pickFiles();
+    FilePickerResult? result = await FilePicker.platform.pickFiles(
+      type: FileType.custom,
+      allowedExtensions: ['pdf'],
+      withData: true,
+    );
+
+    Uint8List? file_int;
+
+    if (result != null) {
+      PlatformFile file = result.files.first;
+      file_int =  file.bytes;
+      // print(file.name);
+      // print(file.bytes);
+      // print(file.size);
+      // print(file.extension);
+      // print(file.path);
+      // Get the application document directory
+//       Directory appDocDir = await getApplicationDocumentsDirectory();
+// // Get the absolute path
+//       String appDocPath = appDocDir.path;
+// // Copy it to the new file
+// //       final File fileForFirebase = File(pdf.path);
+//       final File newFile = await file.copy('$appDocPath/your_file_name.${file.extension}');
+
+    }
+
+
+
+
+
     int page_size = 0;
     PdfDocument document =
-    PdfDocument(inputBytes: await _readDocumentData(file_path));
+    PdfDocument(inputBytes:file_int);
+    //  File(file_path).re await _readDocumentData(file_path)
     page_size = document.pages.count;
     PdfTextExtractor extractor = PdfTextExtractor(document);
     String text = "";
     List<Analysis> analysis_list = [];
     String tarih = "";
     String ust_sinif = "";
-    for (int i = 0; i < page_size - 1; i++) {
+    for (int i = 0; i < page_size ; i++) {
       // if(i ==0){
 
       text = extractor.extractText(startPageIndex: i);
@@ -75,13 +111,13 @@ class AnalysisService{
       }
 
     }
+    // dispose
+    document.dispose();
     return analysis_list;
+
   }
 
-  static Future<List<int>> _readDocumentData(String name) async {
-    final ByteData data = await rootBundle.load(name);
-    return data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
-  }
+
 
 
 

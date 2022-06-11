@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
-
+import 'details.dart';
 import '../models/Analysis.dart';
 
 enum Options { liste, grafik }
@@ -21,21 +21,6 @@ class _DetailPage extends State {
   List<Analysis> selected_list = [];
   List<Analysis> data = [];
   var _popupMenuItemIndex = 0;
-  Map<String, List<String>> _details = {
-    "PLT": [
-      "Vücutta kanın pıhtılaşmasını sağlayan hücre pulcuklara PLT,"
-          " platelet, trombosit adları verilmektedir. ",
-      """Yüksek Olması Durumunda :
-         – Kanın damar içinde pıhtı atması riski artmasıyla, hayati tehlikenin 
-         ortaya çıkması
-  – Yüksek kolesterol, şeker hastalığı ve tansiyon dengesizliği sorunlarının
-   getirebileceği
-   risklerin artması""",
-      """Düşük Olması Durumunda: 
-      – Basit bir kanamalı durumda bile fazla kan kaybedilmesi,
-– PLT sayısının 10.000'in altına düştüğü durumlarda beyin kanaması, """
-    ],
-  };
 
   _DetailPage(List<Analysis> selected_list) {
     this.selected_list = selected_list;
@@ -75,9 +60,12 @@ class _DetailPage extends State {
                     padding: const EdgeInsets.all(10.0),
                     child: SingleChildScrollView(
                       scrollDirection: Axis.vertical,
-                      child: Text(get_text(selected_list[0].islem_adi),
-                          style: TextStyle(
-                              fontSize: 16.00, fontWeight: FontWeight.bold)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text(get_text(selected_list[0].islem_adi),
+                            style: TextStyle(
+                                fontSize: 16.00, fontWeight: FontWeight.bold)),
+                      ),
                     ),
                   ),
                 ),
@@ -139,7 +127,6 @@ class _DetailPage extends State {
                               return double.tryParse(item.sonuc);
                             }
                             catch (e){
-                              print(e);
                               return 0;
                             }
                           },
@@ -162,7 +149,6 @@ class _DetailPage extends State {
                             }
                           }
                           catch(e){
-                            print(e);
                             return Colors.green;
                           }
                           })
@@ -202,12 +188,12 @@ class _DetailPage extends State {
   }
 
   String get_text(String islem_adi) {
-    if (_details.containsKey(islem_adi)) {
-      return _details[islem_adi]![0] +
-          _details[islem_adi]![1] +
-          _details[islem_adi]![2];
+    String upper_islem = islem_adi.trim().toUpperCase();
+    print(upper_islem);
+    if (analyis_details.containsKey(upper_islem)) {
+      return analyis_details[upper_islem]!;
     } else {
-      return "";
+      return "Bu değer hakkında veri henüz bulunamadı...";
     }
   }
 

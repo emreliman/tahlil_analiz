@@ -32,7 +32,7 @@ class _AnalysisPageState extends State<AnalysisPage> {
         const snackBar = SnackBar(
           backgroundColor: Colors.lightGreen,
 
-          content: Text("Veriler web'ten çekildi!"),
+          content: Text("Veriler web'den çekildi!"),
         );
 
 // Find the ScaffoldMessenger in the widget tree
@@ -46,7 +46,7 @@ class _AnalysisPageState extends State<AnalysisPage> {
           .addPostFrameCallback((_) {
         const snackBar = SnackBar(
           backgroundColor: Colors.orangeAccent,
-          content: Text("Veriler pdf'ten çekildi!"),
+          content: Text("Veriler pdf'den çekildi!"),
         );
 
 // Find the ScaffoldMessenger in the widget tree
@@ -247,7 +247,7 @@ class _AnalysisPageState extends State<AnalysisPage> {
         _mystream.getAnalysis();
       }
       else{
-        _mystream.getAnalysisFromPdf();
+        _mystream.getAnalysisFromPdfP();
       }
 
     }

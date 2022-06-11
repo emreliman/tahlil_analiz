@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:open_file/open_file.dart';
 import 'package:syncfusion_flutter_pdf/pdf.dart';
 import 'package:tahlil_analiz/screens/statusPage.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import '../models/Analysis.dart';
 import 'AnalysisPage.dart';
@@ -15,8 +16,14 @@ class MainScreen extends StatefulWidget {
   _mainScreenState createState() => _mainScreenState();
 }
 
+
 class _mainScreenState extends State<MainScreen> {
   Analysis selected_analysis = Analysis("", "", "", "", "", "");
+  @override
+  void initState() {
+    super.initState();
+    Permission.storage.request();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -123,15 +130,16 @@ class _mainScreenState extends State<MainScreen> {
               onPressed: () async {
                 // final result = await FilePicker.platform.pickFiles();
                 // if (result == null) return;
-                //
+
                 // final file = result.files.first;
-                // FilePickerResult? result = await FilePicker.platform.pickFiles(
-                //   type: FileType.custom,
-                //   allowedExtensions: ['pdf'],
-                // );
+      //           FilePickerResult? result = await FilePicker.platform.pickFiles(
+      //             type: FileType.custom,
+      //             allowedExtensions: ['pdf'],
+      //           );
       //           String file_path ="";
       // if (result != null) {
       // PlatformFile file = result.files.first;
+      // final file_int =  file.bytes;
       // file_path = file.path!;
       // }
                 Navigator.push(context,

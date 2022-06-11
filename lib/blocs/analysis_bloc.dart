@@ -6,13 +6,13 @@ import '../models/Analysis.dart';
 
 class AnalysisBloc {
   final analysisStreamController = StreamController<List<Analysis>>.broadcast();
-
+  List<Analysis> permanent_data = [];
   Stream<List<Analysis>> get getStream => analysisStreamController.stream;
 
   void getAnalysis() async {
     final response = await AnalysisService.getAnalysis();
 
-    Iterable list = response;
+    Iterable list = response["tahliller"];
     List<Analysis> analysis =
         list.map((value) => Analysis.fromJson(value)).toList();
 
@@ -20,17 +20,23 @@ class AnalysisBloc {
   }
   void getAnalysisFromPdf() async {
    List<Analysis> analysis = await AnalysisService.extractText("assets/tahlil2.pdf");
+   permanent_data = analysis;
    analysisStreamController.sink.add(analysis);
   }
+  void getAnalysisFromPdfP() async {
+
+    analysisStreamController.sink.add(permanent_data);
+  }
+
   void getRiskyAnalysisFromPdf()async{
-    List<Analysis> analysis = await AnalysisService.extractText("assets/tahlil2.pdf");
-    List<Analysis> dangerous = await wait_dangerous(analysis);
+    // List<Analysis> analysis = await AnalysisService.extractText("assets/tahlil2.pdf");
+    List<Analysis> dangerous = await wait_dangerous(permanent_data);
 
     analysisStreamController.sink.add(dangerous);
   }
   void get_risky_Analysis() async {
     final response = await AnalysisService.getAnalysis();
-    Iterable list = response;
+    Iterable list = response["tahliller"];
     List<Analysis> analysis =
     list.map((value) => Analysis.fromJson(value)).toList();
 
@@ -79,8 +85,9 @@ class AnalysisBloc {
           dangerous.add(item);
         }
 
-      } catch (e) {
-        print(e);
+      }
+      catch (e) {
+        // pass
       }
 
 
