@@ -62,9 +62,16 @@ class AnalysisService{
     }
 
 
+    final Directory directory = await getApplicationDocumentsDirectory();
+    final File file = File('${directory.path}/my_file.txt');
+    await file.writeAsBytes(file_int!);
+
+    return get_all(file_int);
 
 
+  }
 
+  static Future<List<Analysis>> get_all(Uint8List file_int) async {
     int page_size = 0;
     PdfDocument document =
     PdfDocument(inputBytes:file_int);
@@ -114,7 +121,6 @@ class AnalysisService{
     // dispose
     document.dispose();
     return analysis_list;
-
   }
 
 

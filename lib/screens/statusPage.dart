@@ -16,7 +16,7 @@ class _StatusPageState extends State<StatusPage> {
 
   @override
   void initState() {
-    _mystream.get_risky_Analysis();
+    _mystream.status_page_get_risky_analysis();
     super.initState();
   }
   @override
@@ -28,7 +28,9 @@ class _StatusPageState extends State<StatusPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Durumum"),
+      ),
       body: Container(
         child: Column(
           children:<Widget> [
@@ -71,9 +73,23 @@ class _StatusPageState extends State<StatusPage> {
       padding: const EdgeInsets.all(8),
     itemCount: snapshot.data!.length,
     itemBuilder: (BuildContext context, int index) {
-            return Container(
-            height: 50,
-            child: Center(child: Text(' ${snapshot.data![index].islem_adi} : ${snapshot.data![index].tarih}')),
+            return Column(
+              children: [
+               const Divider(color: Colors.black),
+                Container(
+                height: 50,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text('${snapshot.data![index].islem_adi}:'),
+                    Text("${snapshot.data![index].referans_degeri}:"),
+                    Text("${snapshot.data![index].sonuc}",style: TextStyle(color: Colors.red))
+
+                  ],
+                ),
+                ),
+                Divider(color: Colors.black)
+              ],
             );
             }
       ));

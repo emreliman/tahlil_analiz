@@ -32,7 +32,7 @@ class _AnalysisPageState extends State<AnalysisPage> {
         const snackBar = SnackBar(
           backgroundColor: Colors.lightGreen,
 
-          content: Text("Veriler web'den çekildi!"),
+          content: Text("Veriler tekrardan çekildi!"),
         );
 
 // Find the ScaffoldMessenger in the widget tree
@@ -42,6 +42,7 @@ class _AnalysisPageState extends State<AnalysisPage> {
 
     }
     else{
+      _mystream.getAnalysisFromPdf();
       WidgetsBinding.instance
           .addPostFrameCallback((_) {
         const snackBar = SnackBar(
@@ -53,7 +54,7 @@ class _AnalysisPageState extends State<AnalysisPage> {
 // and use it to show a SnackBar.
         ScaffoldMessenger.of(context).showSnackBar(snackBar);
       });
-      _mystream.getAnalysisFromPdf();
+
 
     }
     super.initState();

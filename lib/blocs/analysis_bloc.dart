@@ -1,5 +1,8 @@
 import 'dart:async';
+import 'dart:io';
+import 'dart:typed_data';
 
+import 'package:path_provider/path_provider.dart';
 import 'package:tahlil_analiz/data/analysis_service.dart';
 
 import '../models/Analysis.dart';
@@ -10,13 +13,24 @@ class AnalysisBloc {
   Stream<List<Analysis>> get getStream => analysisStreamController.stream;
 
   void getAnalysis() async {
-    final response = await AnalysisService.getAnalysis();
+    // final response = await AnalysisService.getAnalysis();
+    //
+    // Iterable list = response["tahliller"];
+    // List<Analysis> analysis =
+    //     list.map((value) => Analysis.fromJson(value)).toList();
 
-    Iterable list = response["tahliller"];
-    List<Analysis> analysis =
-        list.map((value) => Analysis.fromJson(value)).toList();
+      Uint8List? text;
+      try {
+        final Directory directory = await getApplicationDocumentsDirectory();
+        final File file = File('${directory.path}/my_file.txt');
+        text = await file.readAsBytes();
+      } catch (e) {
+        print("Couldn't read file");
+      }
+      permanent_data = await AnalysisService.get_all(text!);
 
-    analysisStreamController.sink.add(analysis);
+
+    analysisStreamController.sink.add(permanent_data);
   }
   void getAnalysisFromPdf() async {
    List<Analysis> analysis = await AnalysisService.extractText("assets/tahlil2.pdf");
@@ -27,6 +41,19 @@ class AnalysisBloc {
 
     analysisStreamController.sink.add(permanent_data);
   }
+  void status_page_get_risky_analysis() async{
+    Uint8List? text;
+    try {
+      final Directory directory = await getApplicationDocumentsDirectory();
+      final File file = File('${directory.path}/my_file.txt');
+      text = await file.readAsBytes();
+    } catch (e) {
+      print("Couldn't read file");
+    }
+    permanent_data = await AnalysisService.get_all(text!);
+    List<Analysis> dangerous = await wait_dangerous(permanent_data);
+    analysisStreamController.sink.add(dangerous);
+  }
 
   void getRiskyAnalysisFromPdf()async{
     // List<Analysis> analysis = await AnalysisService.extractText("assets/tahlil2.pdf");
@@ -35,13 +62,13 @@ class AnalysisBloc {
     analysisStreamController.sink.add(dangerous);
   }
   void get_risky_Analysis() async {
-    final response = await AnalysisService.getAnalysis();
-    Iterable list = response["tahliller"];
-    List<Analysis> analysis =
-    list.map((value) => Analysis.fromJson(value)).toList();
-
-    List<Analysis> dangerous = await wait_dangerous(analysis);
-
+    // final response = await AnalysisService.getAnalysis();
+    // Iterable list = response["tahliller"];
+    // List<Analysis> analysis =
+    // list.map((value) => Analysis.fromJson(value)).toList();
+    //
+    // List<Analysis> dangerous = await wait_dangerous(analysis);
+    List<Analysis> dangerous = await wait_dangerous(permanent_data);
     analysisStreamController.sink.add(dangerous);
   }
 

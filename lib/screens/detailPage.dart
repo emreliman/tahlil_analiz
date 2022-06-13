@@ -35,7 +35,7 @@ class _DetailPage extends State {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("${selected_list[0].islem_adi}"),
+          title: Text(selected_list[0].islem_adi),
           actions: [
             PopupMenuButton(
               onSelected: (val) {
