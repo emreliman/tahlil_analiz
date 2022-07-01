@@ -6,6 +6,7 @@ Hastaneye gidildiğinde çoğunlukla kan testi yapılır. Bu kan testinin sonucu
 ## Ekran Görüntüleri
 
 ![ana_ekran](https://user-images.githubusercontent.com/70384088/176907881-135e4edc-9954-47eb-b539-e025426ac51c.png)
+<img src="https://user-images.githubusercontent.com/70384088/176907881-135e4edc-9954-47eb-b539-e025426ac51c.png" alt="drawing" width="200"/>
 ![tahliller](https://user-images.githubusercontent.com/70384088/176907919-9877268f-6458-4796-97e6-0ec65a47b745.png)
 ![list](https://user-images.githubusercontent.com/70384088/176908157-2f4f4b01-fe32-42a2-b958-10c985b979e1.png)
 ![grafik](https://user-images.githubusercontent.com/70384088/176908165-c61a4c47-24d5-4905-a9e5-444674c826ec.png)
