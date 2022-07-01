@@ -1,16 +1,12 @@
-# tahlil_analiz
+# Tahlil Analiz Mobil Uygulaması
 
-A new Flutter project.
+Hastaneye gidildiğinde çoğunlukla kan testi yapılır. Bu kan testinin sonucu beklenilir ve tekrardan sıra alınarak doktora kan testi sonuçları gösterilir. Bu uygulama ile doktora gitmeden kan testi hakkında bilgi sahibi olacağız. Böylelikle doktora gitmeden kan tahlilimiz ile ilgili bir ön bilgiye sahip olacağız. (Veriler E-nabız pdflerinden çekiliyor)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Ekran Görüntüleri
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![ana_ekran](https://user-images.githubusercontent.com/70384088/176907881-135e4edc-9954-47eb-b539-e025426ac51c.png)
+![tahliller](https://user-images.githubusercontent.com/70384088/176907919-9877268f-6458-4796-97e6-0ec65a47b745.png)
+![list](https://user-images.githubusercontent.com/70384088/176908157-2f4f4b01-fe32-42a2-b958-10c985b979e1.png)
+![grafik](https://user-images.githubusercontent.com/70384088/176908165-c61a4c47-24d5-4905-a9e5-444674c826ec.png)
+![durum](https://user-images.githubusercontent.com/70384088/176908174-93963be7-e141-4aed-8c3d-d4af0055bfe0.png)
