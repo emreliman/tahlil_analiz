@@ -79,7 +79,7 @@ class LoginScreen extends StatelessWidget {
   }
 
   void control_names(BuildContext context) {
-    doit();
+
 
     print(nameController.text);
     print(passwordController.text);
@@ -95,7 +95,7 @@ class LoginScreen extends StatelessWidget {
     }
   }
 
-  void doit() async {
-    List result = await AnalysisService.getAnalysis();
-  }
+  // void doit() async {
+  //   List result = await AnalysisService.getAnalysis();
+  // }
 }

@@ -16,7 +16,7 @@ class _StatusPageState extends State<StatusPage> {
 
   @override
   void initState() {
-    _mystream.status_page_get_risky_analysis();
+    _mystream.statusPageGetRiskyAnalysis();
     super.initState();
   }
   @override

@@ -26,7 +26,8 @@ class _AnalysisPageState extends State<AnalysisPage> {
   @override
   void initState() {
     if(from_web){
-      _mystream.getAnalysis();
+     _mystream.getAnalysis();
+
       WidgetsBinding.instance
           .addPostFrameCallback((_) {
         const snackBar = SnackBar(
@@ -254,7 +255,7 @@ class _AnalysisPageState extends State<AnalysisPage> {
     }
     else{
       if(from_web){
-        _mystream.get_risky_Analysis();
+        _mystream.getRiskyAnalysis();
       }
       else{
         _mystream.getRiskyAnalysisFromPdf();

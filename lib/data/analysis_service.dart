@@ -9,31 +9,31 @@ import 'package:syncfusion_flutter_pdf/pdf.dart';
 import '../models/Analysis.dart';
 
 class AnalysisService{
-  static List<Analysis> all_analysis = [];
+  static List<Analysis> allAnalysis = [];
 
-  static AnalysisService _singleton = new AnalysisService._internal();
+  static final AnalysisService _singleton =  AnalysisService._internal();
 
   factory AnalysisService(){
     return _singleton;
   }
   AnalysisService._internal();
 
-  static Future getAnalysis () async{
-    final String response =
-  await rootBundle.loadString('assets/54478355056.json');
-  final _data =json.decode(response);
-    return _data;
-    // final _response = await http.get(Uri.parse("http://10.0.2.2:3000/tahliller"));
-    // if (_response.statusCode == 200){
-    //   return json.decode(_response.body);
-    // }
-    // else {
-    //   throw Exception("Yükleme başarısız.");
-    // }
+  // static Future getAnalysis () async{
+  //   final String response =
+  // await rootBundle.loadString('assets/.json');
+  // final _data =json.decode(response);
+  //   return _data;
+  //   // final _response = await http.get(Uri.parse("http://10.0.2.2:3000/tahliller"));
+  //   // if (_response.statusCode == 200){
+  //   //   return json.decode(_response.body);
+  //   // }
+  //   // else {
+  //   //   throw Exception("Yükleme başarısız.");
+  //   // }
+  //
+  // }
 
-  }
-
-  static Future<List<Analysis>> extractText(String file_path) async {
+  static Future<List<Analysis>> extractText(String filePath) async {
     // final result = await FilePicker.platform.pickFiles();
     FilePickerResult? result = await FilePicker.platform.pickFiles(
       type: FileType.custom,
@@ -41,11 +41,11 @@ class AnalysisService{
       withData: true,
     );
 
-    Uint8List? file_int;
+    Uint8List? fileInt;
 
     if (result != null) {
       PlatformFile file = result.files.first;
-      file_int =  file.bytes;
+      fileInt =  file.bytes;
       // print(file.name);
       // print(file.bytes);
       // print(file.size);
@@ -64,25 +64,25 @@ class AnalysisService{
 
     final Directory directory = await getApplicationDocumentsDirectory();
     final File file = File('${directory.path}/my_file.txt');
-    await file.writeAsBytes(file_int!);
+    await file.writeAsBytes(fileInt!);
 
-    return get_all(file_int);
+    return getAll(fileInt);
 
 
   }
 
-  static Future<List<Analysis>> get_all(Uint8List file_int) async {
-    int page_size = 0;
+  static Future<List<Analysis>> getAll(Uint8List fileInt) async {
+    int pageSize = 0;
     PdfDocument document =
-    PdfDocument(inputBytes:file_int);
+    PdfDocument(inputBytes:fileInt);
     //  File(file_path).re await _readDocumentData(file_path)
-    page_size = document.pages.count;
+    pageSize = document.pages.count;
     PdfTextExtractor extractor = PdfTextExtractor(document);
     String text = "";
-    List<Analysis> analysis_list = [];
+    List<Analysis> analysisList = [];
     String tarih = "";
-    String ust_sinif = "";
-    for (int i = 0; i < page_size ; i++) {
+    String ustSinif = "";
+    for (int i = 0; i < pageSize ; i++) {
       // if(i ==0){
 
       text = extractor.extractText(startPageIndex: i);
@@ -93,10 +93,10 @@ class AnalysisService{
         List<String> first2 = [analysis[j], analysis[j + 1], analysis[j + 2]];
 
         if (first2[2].contains("-")) {
-          analysis_list
+          analysisList
               .add(Analysis(analysis[j + 1], "", "", "", analysis[j], ""));
           tarih = analysis[j];
-          ust_sinif = analysis[j + 1];
+          ustSinif = analysis[j + 1];
           if (analysis[j + 1].contains("İdrar analizi (Strip ile)")) {
             break;
           }
@@ -104,12 +104,12 @@ class AnalysisService{
           continue;
         }
         if (first2[0].contains("-")) {
-          analysis_list.add(Analysis(analysis[j + 1], analysis[j + 2],
-              analysis[j + 3], analysis[j + 4], tarih, ust_sinif));
+          analysisList.add(Analysis(analysis[j + 1], analysis[j + 2],
+              analysis[j + 3], analysis[j + 4], tarih, ustSinif));
           j = j + 4;
           continue;
         } else {
-          analysis_list.add(Analysis(analysis[j + 1], analysis[j + 2],
+          analysisList.add(Analysis(analysis[j + 1], analysis[j + 2],
               analysis[j + 3], analysis[j + 4], analysis[j], ""));
           j = j + 4;
 
@@ -120,7 +120,7 @@ class AnalysisService{
     }
     // dispose
     document.dispose();
-    return analysis_list;
+    return analysisList;
   }
 
 

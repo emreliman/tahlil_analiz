@@ -68,9 +68,6 @@ flutter_icons:
 flutter:
   assets:
     - assets/
-    - assets/54478355056.json
-    - assets/tahlil.pdf
-    - assets/heart.png
 
 
   # The following line ensures that the Material Icons font is
